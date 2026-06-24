@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>It's space!</title>
+<link href="TheVastEmptinessOfSpaceStyle.css" rel="stylesheet" type="text/css">
+	
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	
+	
+</head>
+	
+
+<body class="moving-background-page"> <!--Makes only this page have the cursor moving background thing, not sure what to call it-->
+
+<!--Moving Background-->
+<div class="Video-Background moving">
+	<video autoplay muted loop playsinline>
+	<source src="Backgrounds/StarVideo.mp4" type="video/mp4">
+	</video>
+	</div>
+	
+	
+		<!--Lines-->
+		<svg class="constellation">
+			
+		<line x1="50%"
+			  y1="15%"
+			  x2="35%"
+			  y2="30%" />
+			
+			<line x1="50%"
+			  y1="15%"
+			  x2="65%"
+			  y2="30%" />
+			
+			<line x1="35%"
+			  y1="30%"
+			  x2="30%"
+			  y2="50%" />
+			
+			<line x1="65%"
+			  y1="30%"
+			  x2="70%"
+			  y2="50%" />
+			
+			<line x1="30%"
+			  y1="50%"
+			  x2="50%"
+			  y2="75%" />
+			
+			<line x1="70%"
+			  y1="50%"
+			  x2="50%"
+			  y2="75%" />
+			
+		</svg>
+			
+	<!--Stars-->
+		<a class="star s1" href="VoidsAndSuperVoids.html">
+			<img src="Images/Starman.png" alt="Star">
+			<span class="label wide-label"><strong>Voids and Supervoids</strong></span></a>
+		
+		<a class="star s2" href="Bootesvoid.html">
+			<img src="Images/Starman2.png" alt="Star">
+			<span class="label"><strong>Boötes Void</strong></span></a>
+	
+		<a class="star s3" href="WhatMakesVoidsEmpty.html">
+			<img src="Images/Starman2.png" alt="Star">
+			<span class="label wide-label"><strong>Why are voids so empty?</strong></span></a>
+		
+		<a class="star s4" href="index.html">🚀
+			<span class="label down"><strong>Take me home!</strong></span></a>
+		
+		<a class="star s5" href="Makingof.html">
+			<img src="Images/Starman2.png" alt="Star">
+		<span class="label wide-label"><strong>Making of the Website</strong></span></a>
+	
+		<a class="star s6" href="Bibliography.html">
+			<img src="Images/Starman2.png" alt="Star">
+		<span class="label wide-label"><strong>Bibliography</strong></span></a>
+	
+	<!--This page is for some reason very broken, it runs on hopes and dreams-->
+	
+	<script>
+		const bg = document.querySelector('.Video-Background.moving');
+		console.log(bg);
+		document.addEventListener('mousemove', (e) => {
+			const x = (e.clientX / window.innerWidth - 0.5) * 90; 
+			const y = (e.clientY / window.innerHeight - 0.5) * 90; 
+			bg.style.transform = `translate(${-x}px, ${-y}px) scale(1.2)`;
+		});
+	</script>
+	<!--I HATE JAVA SCRIPT ITS SO CONFUSING-->
+	
+	<!--Ignore this ;)-->
+	<a href="https://open.spotify.com/track/4PTG3Z6ehGkBFwjybzWkR8?si=d8972fb1364645ff" class="Coolstuff" target="_blank"></a>
+	
+	
+	<div class="copyright">
+		<p>© Copyright 2026 Lucas Gunn</p>
+	</div>
+	
+	<!--Music is here -->
+<div class="music">
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2FzXZoS1DpsxxYw6ovCcDa?utm_source=generator&theme=0&si=d5c42c0dbe014d5d" width="500" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+	</div>
+	
+</body>
+</html>
